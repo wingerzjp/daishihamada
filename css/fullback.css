@@ -120,6 +120,7 @@ input, select {
 body{
 	font-family: 'ipaexm';
 	line-height: 115%;
+	background-color: #ffffff;
 }
 
 img{
@@ -171,6 +172,12 @@ a{
 	float: right;
 	padding: 20px 10px 20px 20px;
 }
+
+.nav_line img{
+	width: 25px;
+	height: 25px;
+}
+
 .nav_logo{
 	width: 130px;
 	margin: auto;
