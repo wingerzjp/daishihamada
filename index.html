@@ -2,12 +2,17 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
 <meta name="keywords" content="daishihamada,daishi,hamada, DaishiHamada,Photographer Daishi Hamada,浜田大士,浜田,大士,Hamada,Daishi,ハマダ,ダイシ,写真家,フォトグラファー,photographer">
 <meta name="description" content="Photographer Daishi Hamada/フォトグラファー ハマダ ダイシ">
 <title>Daishi Hamada</title>
 <link rel="stylesheet" type="text/css" href="./css/fullback.css">
+<link rel="stylesheet" type="text/css" href="./css/jquery.mmenu.css">
+<link rel="stylesheet" type="text/css" href="./css/jquery.mmenu.positioning.css">
+
 <script src="lib/jquery-1.7.2.js"></script>
 <script src="lib/jquery.backstretch.min.js"></script>
+<script src="lib/jquery.mmenu.min.js"></script>
 <link rel="shortcut icon" type="image/x-icon" href="./images/fav.png">
 <link rel="apple-touch-icon" href="./images/webclip.jpg">
 
@@ -33,7 +38,22 @@ $(function(){
 });
 </script>
 
-<script><!--サイドアコーディオンメニュー-->
+<!-- ▼navメニュー▼ -->
+<script type="text/javascript">
+//JavaScriptの記載
+   $(document).ready(function() {
+      $("#my-menu").mmenu({
+  		offCanvas: {
+        	        position  : "right", //left(デフォルト)・right・top・bottom
+					zposition : "next" //back(デフォルト)・front・next   
+            		}
+});
+   });
+</script>
+
+
+<!-- サイドアコーディオンメニュー▼ -->
+<script>
     $(function(){
         $("#menu_sab dt").on("click", function() {
             $(this).next().slideToggle();
@@ -41,6 +61,7 @@ $(function(){
     });
 </script>
 
+<!-- googleアナリティクス▼ -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -58,8 +79,10 @@ $(function(){
 
 <div id="wrapper">
 
-<?php include("side.php"); ?>
 
+
+<?php include("side.php"); ?>
+<?php include("m_nav.php"); ?>
 
 
 </div> <!--wapper -->

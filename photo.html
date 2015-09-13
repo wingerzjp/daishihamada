@@ -2,18 +2,38 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
 <title>Daishi Hamada</title>
 <link rel="stylesheet" type="text/css" href="./css/fullback.css">
+<link rel="stylesheet" type="text/css" href="./css/jquery.mmenu.css">
+<link rel="stylesheet" type="text/css" href="./css/jquery.mmenu.positioning.css">
 <link rel="stylesheet" type="text/css" href="./css/swipebox.min.css">
 <link rel="stylesheet" type="text/css" href="./css/swipebox_back.css">
 <script src="lib/jquery-1.7.2.js"></script>
 <script src="lib/jquery.backstretch.min.js"></script>
+<script src="lib/jquery.mmenu.min.js"></script>
 <script src="lib/masonry.pkgd.min.js"></script>
 <script src="lib/imagesloaded.pkgd.min.js"></script>
 <script src="lib/jquery.infinitescroll.min.js"></script>
 <script src="lib/jquery.swipebox.min.js"></script>
 <link rel="shortcut icon" type="image/x-icon" href="./images/fav.png">
 <link rel="apple-touch-icon" href="./images/webclip.jpg">
+
+
+<!-- ▼navメニュー▼ -->
+<script type="text/javascript">
+//JavaScriptの記載
+   $(document).ready(function() {
+      $("#my-menu").mmenu({
+      offCanvas: {
+                  position  : "right", //left(デフォルト)・right・top・bottom
+          zposition : "next" //back(デフォルト)・front・next   
+                }
+});
+   });
+</script>
+
+
 
 <script>
     $(function(){
@@ -87,6 +107,7 @@ jQuery(function($) {
 <div id="wrapper">
 
 <?php include("side.php"); ?>
+<?php include("m_nav.php"); ?>
 
 <!-- contens -->
 <div id="contens">
