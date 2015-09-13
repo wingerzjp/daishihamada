@@ -1,0 +1,289 @@
+/*基本設定*/
+
+@font-face {
+  font-family: 'ipaexm';
+  /*src: url(hannari.eot);*/
+  src: url(ipaexm.woff) format('woff');
+}
+
+
+body{
+	font-family: 'ipaexm';
+	line-height: 115%;
+}
+
+
+img{
+	border-style:none;
+}
+
+#wrapper{
+	width: 100%;
+	display:table;
+	
+}
+
+#side{
+	width:210px;
+	height: 100%;
+	display: table-cell;
+	table-layout: fixed;
+	vertical-align: top;
+}
+
+#contens{
+	width: 85%;
+	min-width: 450px;
+	height: 100%;
+	display: table-cell;
+	padding-top:100px;
+	margin: auto;
+}
+
+/*サイド設定*/
+
+#sidefix{
+	width: 210px;
+	height: 100%;
+}
+
+#toplogo{
+	width: 200px;
+	height: 90px;
+	position: fixed;
+	margin:15px auto 15px 5px;
+}
+#toplogo img{
+	width: 200px;
+	height: 90px;
+}
+
+#icon{
+	position: fixed;
+	margin-top: 120px;
+	padding-left: 8px;	
+}
+
+#icon ul{
+	margin:0 auto 0 0;
+	padding:0 0 0 0;
+}
+
+#icon li{
+	float:left;
+	list-style-type: none;
+}
+
+#icon img{
+	width: 30px;
+	height:30px;
+}
+
+#menu {
+	clear: both;
+	position: fixed;
+	margin-top: 160px;
+	margin-left: 5px;
+}
+
+#menu ul{
+	margin:0 auto 0 0;
+	padding:0 0 0 10px;
+	height: 30px;
+}
+
+#menu li{
+	height:30px;
+	list-style-type: none;
+
+}
+
+#menu_sab{
+	margin:0 0 0 0;
+}
+
+
+#menu_sab dt{
+	display: block;
+	height:30px;
+	line-height: 25px;
+	margin:0 0 0 0;
+	cursor:pointer;
+}
+
+#menu_sab dd{
+	display: none;
+	height:90px;
+	line-height: 25px;
+	margin:0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+#menu_sab dd li{
+	height:30px;
+	line-height: 30px;
+	margin:0 0 0 0;
+	padding: 0 0 0 0;
+}
+	
+
+/*コンテンツ設定*/
+
+
+/*info*/
+
+#info {
+	width:700px;
+	margin:auto;
+	padding:auto;
+}
+
+/*#info_facebook div{
+	margin:auto auto auto 180px;
+	
+}*/
+
+
+/*biography*/
+
+#biography{
+	
+	display: table;
+	margin:auto;
+	text-align: center;
+}
+
+#biography_left{
+
+	display: table-cell;
+	width: 430px;
+	text-align: left;
+}
+
+#biography_right{
+	display: table-cell;
+	width: 480px;
+	vertical-align: top;
+	text-align: left;
+	font-size: 13px;
+}
+
+
+/*photo*/
+
+#main {
+  height:100%; 
+  margin: auto;
+  position: relative;
+}
+
+
+#tiles {
+  list-style-type: none;
+  position: relative;
+  margin: auto;
+  padding: 0;
+}
+
+
+
+#container{
+	margin:auto;
+	width: 90%;
+	padding: auto;
+	text-align: center;
+}
+
+.item {
+    width: 300px;
+    margin: 3px 5px;
+    float: left;
+    text-align: center;
+    
+    
+    /*border: 1px solid #ccc;
+    background: #eee;
+    box-shadow: 0 2px 1px #eee;*/
+}
+
+/*works*/
+.works_table{
+	display: table;
+	margin: auto auto 50px auto;
+	width: 780px;
+	height: 360px
+}
+
+.works_img{
+	display: table-cell;
+	width: 350px;
+	text-align:center;
+}
+
+.works_text{
+	display: table-cell;
+	vertical-align: top;
+	padding: 30px;
+	font-size: 13px;
+}
+
+/*movie*/
+
+.movie_table{
+	display: table;
+	width: 900px;
+	height: 360px;
+	text-align: center;
+	margin: auto auto 50px auto;
+	
+}
+
+.movie_img{
+	display: table-cell;
+	width:480px;
+}
+
+.movie_text{
+	display: table-cell;
+	vertical-align: top;
+	text-align: left;
+	padding: 50px;
+	font-size: 13px;
+}
+
+
+
+.movie_kanren{
+	display: table;
+	width: 900px;
+	height: 40px;
+	text-align: left;
+	margin: 80px auto 10px auto;
+	font-size: 20px;
+}
+
+.movie_kanrentext{
+	display: table-cell;
+	width:480px;
+}
+
+.movie_kanrentext2{
+	display: table-cell;
+	vertical-align: top;
+	text-align: left;	
+}
+
+/*contact*/
+
+#contact{
+	width: 600px;
+	margin:auto auto auto 20%;
+	padding-top: 100px;
+}
+
+#contact_text{
+	width: 600px;
+	text-align: center;
+}
+
+

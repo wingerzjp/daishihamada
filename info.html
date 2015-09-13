@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Daishi Hamada</title>
+<link rel="stylesheet" type="text/css" href="./css/fullback.css">
+<link rel="stylesheet" type="text/css" href="./css/swipebox.min.css">
+<link rel="stylesheet" type="text/css" href="./css/swipebox_back.css">
+<script src="lib/jquery-1.7.2.js"></script>
+<script src="lib/jquery.backstretch.min.js"></script>
+<script src="lib/jquery.swipebox.min.js"></script>
+<link rel="shortcut icon" type="image/x-icon" href="./images/fav.png">
+<link rel="apple-touch-icon" href="./images/webclip.jpg">
+
+
+
+
+<script>
+    $(function(){
+        $("#menu_sab dt").on("click", function() {
+            $(this).next().slideToggle();
+        });
+    });
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-59453396-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+
+
+<script><!--facebook-->
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '771224009625942',
+      xfbml      : true,
+      version    : 'v2.2'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=771224009625942&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<?php include("side.php"); ?>
+
+
+
+<!-- contens -->
+<div id="contens">
+
+<div id="info">
+
+	<div id="info_facebook">
+<!-- <div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div> -->
+
+<div class="fb-like-box" data-href="https://www.facebook.com/daishi.hamada.fan" data-width="600" data-height="1000" data-colorscheme="light" data-show-faces="false" data-header="false" data-stream="true" data-show-border="false"></div>
+	
+	
+	</div>
+</div>
+
+
+</div><!--contens end-->
+</div><!--wapper end-->
+</body>
+</html>
