@@ -120,7 +120,6 @@ input, select {
 body{
 	font-family: 'ipaexm';
 	line-height: 115%;
-	background-color: #ffffff;
 }
 
 img{
@@ -168,12 +167,12 @@ a{
     overflow: hidden;
 }
 
-.nav_line{
-	float: right;
-	padding: 20px 10px 20px 20px;
+.sb-toggle-left{
+	float: left;
+	padding: 20px 10px 20px 10px;
 }
 
-.nav_line img{
+.sb-toggle-left img{
 	width: 25px;
 	height: 25px;
 }
@@ -190,25 +189,37 @@ a{
 }
 
 .sb-menu li{
-	height: 50px;
+	margin-top: 20px;
+	height: 30px;
 	text-align: center;
+	color:#000000;
 	vertical-align: middle;
 	list-style-type: none;
-	font-family: 'm_impact';
+	font-family: Anton;
 	font-size: 20px;
 }
-.sb-menu img{
-	padding-top: 11px;
+
+.sb-menu li a{
+	color: #000000;
+}
+
+.sb-menu hr{
+	margin-top: 13px;
+	margin-bottom: 13px;
+	border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 #nav_icon{
-	text-align: center;
 	margin-top: 20px;
+	text-align: center;
 }
+
 #nav_icon img{
-	padding: 0 2px;
-	width: 30px;
-	height: 30px;
+	width: 32px;
+	height: 32px;
 }
 
 /*サイド設定*/

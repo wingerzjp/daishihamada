@@ -5,28 +5,19 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
 <title>Daishi Hamada</title>
 <link rel="stylesheet" type="text/css" href="./css/fullback.css">
-<link rel="stylesheet" type="text/css" href="./css/jquery.mmenu.css">
-<link rel="stylesheet" type="text/css" href="./css/jquery.mmenu.positioning.css">
-<link rel="stylesheet" type="text/css" href="./css/swipebox.min.css">
-<link rel="stylesheet" type="text/css" href="./css/swipebox_back.css">
-<script src="lib/jquery-1.7.2.js"></script>
-<script src="lib/jquery.backstretch.min.js"></script>
-<script src="lib/jquery.swipebox.min.js"></script>
-<script src="lib/jquery.mmenu.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./css/slidebars.css">
+<script src="lib/jquery-1.11.3.min.js"></script>
+<script src="lib/slidebars.js"></script>
 <link rel="shortcut icon" type="image/x-icon" href="./images/fav.png">
 <link rel="apple-touch-icon" href="./images/webclip.jpg">
 
-<!-- ▼navメニュー▼ -->
-<script type="text/javascript">
-//JavaScriptの記載
-   $(document).ready(function() {
-      $("#my-menu").mmenu({
-      offCanvas: {
-                  position  : "right", //left(デフォルト)・right・top・bottom
-          zposition : "next" //back(デフォルト)・front・next   
-                }
-});
-   });
+
+<script>
+  (function($) {
+    $(document).ready(function() {
+      $.slidebars();
+    });
+  }) (jQuery);
 </script>
 
 
@@ -54,10 +45,11 @@
 </head>
 
 <body>
-
+<div id="sb-site">
 <div id="wrapper">
+<?php include("sp_nav.php"); ?>
 
-
+<?php include("side.php"); ?>
 
 <script><!--facebook-->
   window.fbAsyncInit = function() {
@@ -87,8 +79,7 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
 
-<?php include("side.php"); ?>
-<?php include("m_nav.php"); ?>
+
 
 
 <!-- contens -->
@@ -113,5 +104,9 @@
 
 </div><!--contens end-->
 </div><!--wapper end-->
+</div><!--sb-site -->
+
+<?php include("sp_menu.php"); ?>
+
 </body>
 </html>

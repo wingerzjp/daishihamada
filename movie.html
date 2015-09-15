@@ -4,25 +4,26 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
 <title>Daishi Hamada</title>
-
-<link rel="stylesheet" type="text/css" href="./css/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" type="text/css" href="./css/fullback.css">
+<link rel="stylesheet" type="text/css" href="./css/slidebars.css">
 <link rel="stylesheet" type="text/css" href="./css/swipebox.min.css">
 <link rel="stylesheet" type="text/css" href="./css/swipebox_back.css">
-<link rel="stylesheet" type="text/css" href="./css/fullback.css">
-<script src="lib/jquery-1.7.2.js"></script>
-<script type="text/javascript">
-$(document).bind("mobileinit", function(){
- $.mobile.ajaxEnabled = false;
-});
-</script>
-<script src="lib/jquery.mobile-1.4.5.min.js"></script>
-<script src="lib/jquery.backstretch.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+<script src="lib/jquery-1.11.3.min.js"></script>
+<script src="lib/slidebars.js"></script>
 <script src="lib/jquery.swipebox.min.js"></script>
+
 <link rel="shortcut icon" type="image/x-icon" href="./images/fav.png">
 <link rel="apple-touch-icon" href="./images/webclip.jpg">
 
 
-
+<script>
+  (function($) {
+    $(document).ready(function() {
+      $.slidebars();
+    });
+  }) (jQuery);
+</script>
 
 <script>
     $(function(){
@@ -31,7 +32,6 @@ $(document).bind("mobileinit", function(){
         });
     });
 </script>
-
 
 <script type="text/javascript">
 jQuery(function($) {
@@ -51,21 +51,16 @@ jQuery(function($) {
 
 </script>
 
-
-
 </head>
 
 <body>
-
+<div id="sb-site">
 <div id="wrapper">
-	
-
 <?php include("sp_nav.php"); ?>
+
 <?php include("side.php"); ?>
 
-
 <!-- contens -->
-
 <div id="contens">
 
 	<div class="movie_table">
@@ -171,7 +166,8 @@ jQuery(function($) {
 
 </div><!--contens end-->
 </div><!--wapper end-->
-
+</div>
+<?php include("sp_menu.php"); ?>
 
 </body>
 </html>

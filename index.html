@@ -7,12 +7,10 @@
 <meta name="description" content="Photographer Daishi Hamada/フォトグラファー ハマダ ダイシ">
 <title>Daishi Hamada</title>
 <link rel="stylesheet" type="text/css" href="./css/fullback.css">
-<link rel="stylesheet" type="text/css" href="./css/jquery.mmenu.css">
-<link rel="stylesheet" type="text/css" href="./css/jquery.mmenu.positioning.css">
-
-<script src="lib/jquery-1.7.2.js"></script>
+<link rel="stylesheet" type="text/css" href="./css/slidebars.css">
+<script src="lib/jquery-1.11.3.min.js"></script>
+<script src="lib/slidebars.js"></script>
 <script src="lib/jquery.backstretch.min.js"></script>
-<script src="lib/jquery.mmenu.min.js"></script>
 <link rel="shortcut icon" type="image/x-icon" href="./images/fav.png">
 <link rel="apple-touch-icon" href="./images/webclip.jpg">
 
@@ -38,18 +36,15 @@ $(function(){
 });
 </script>
 
-<!-- ▼navメニュー▼ -->
-<script type="text/javascript">
-//JavaScriptの記載
-   $(document).ready(function() {
-      $("#my-menu").mmenu({
-  		offCanvas: {
-        	        position  : "right", //left(デフォルト)・right・top・bottom
-					zposition : "next" //back(デフォルト)・front・next   
-            		}
-});
-   });
+<script>
+  (function($) {
+    $(document).ready(function() {
+      $.slidebars();
+    });
+  }) (jQuery);
 </script>
+
+
 
 
 <!-- サイドアコーディオンメニュー▼ -->
@@ -76,15 +71,17 @@ $(function(){
 </head>
 
 <body>
-
+<div id="sb-site">
 <div id="wrapper">
-
-
+<?php include("sp_nav.php"); ?>
 
 <?php include("side.php"); ?>
-<?php include("m_nav.php"); ?>
 
 
 </div> <!--wapper -->
+</div><!--sb-site -->
+
+<?php include("sp_menu.php"); ?>
+
 </body>
 </html>
