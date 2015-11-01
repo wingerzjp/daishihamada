@@ -6,8 +6,9 @@
 <meta name="keywords" content="daishihamada,daishi,hamada, DaishiHamada,Photographer Daishi Hamada,浜田大士,浜田,大士,Hamada,Daishi,ハマダ,ダイシ,写真家,フォトグラファー,photographer">
 <meta name="description" content="Photographer Daishi Hamada/フォトグラファー ハマダ ダイシ">
 <title>Daishi Hamada</title>
-<link rel="stylesheet" type="text/css" href="./css/fullback.css">
 <link rel="stylesheet" type="text/css" href="./css/slidebars.css">
+<link rel="stylesheet" type="text/css" href="./css/fullback.css">
+<link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
 <script src="lib/jquery-1.11.3.min.js"></script>
 <script src="lib/slidebars.js"></script>
 <script src="lib/jquery.backstretch.min.js"></script>
@@ -15,26 +16,7 @@
 <link rel="apple-touch-icon" href="./images/webclip.jpg">
 
 
-<script> <!--フルサイズ画像 -->
-$(function(){
-	$.backstretch([
-		"./images/index/use00_2000.jpg",
-		"./images/index/use01_2000.jpg",
-		"./images/index/use06_2000.jpg",
-		"./images/index/use09_2000.jpg",
-		"./images/index/use02_2000.jpg",
-		"./images/index/use04_2000.jpg",
-		"./images/index/use05_2000.jpg",
-		"./images/index/2015.8.1_山中湖花火大会01_2000.jpg",
-		"./images/index/use03_2000.jpg",
-		"./images/index/use08_2000.jpg",
-		"./images/index/use07_2000.jpg"
 
-
-	], {duration: 6000, fade: 2000});
-
-});
-</script>
 
 <script>
   (function($) {
@@ -42,6 +24,28 @@ $(function(){
       $.slidebars();
     });
   }) (jQuery);
+</script>
+
+
+<script> <!--フルサイズ画像 -->
+$(function(){
+  $("#sb-site").backstretch([
+    "./images/index/use00_2000.jpg",
+    "./images/index/use01_2000.jpg",
+    "./images/index/use06_2000.jpg",
+    "./images/index/use09_2000.jpg",
+    "./images/index/use02_2000.jpg",
+    "./images/index/use04_2000.jpg",
+    "./images/index/use05_2000.jpg",
+    "./images/index/2015.8.1_山中湖花火大会01_2000.jpg",
+    "./images/index/use03_2000.jpg",
+    "./images/index/use08_2000.jpg",
+    "./images/index/use07_2000.jpg"
+
+
+  ], {duration: 6000, fade: 2000});
+
+});
 </script>
 
 
@@ -71,17 +75,18 @@ $(function(){
 </head>
 
 <body>
-<div id="sb-site">
+
 <div id="wrapper">
-<?php include("sp_nav.php"); ?>
 
-<?php include("side.php"); ?>
+  <?php include("sp_nav.php"); ?><!--スマホメニューヘッダー-->
 
+  <div id="sb-site">
+  <?php include("side.php"); ?>
+  </div><!--sb-site -->
 
-</div> <!--wapper -->
-</div><!--sb-site -->
+</div><!--wapper -->
 
-<?php include("sp_menu.php"); ?>
+<?php include("sp_menu.php"); ?><!--サイドメニューの中身-->
 
 </body>
 </html>
