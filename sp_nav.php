@@ -1,4 +1,4 @@
-<div id="m_nav">
+<div id="m_nav" class="sb-slide">
 	<div class="sb-toggle-left">
 		<img src="menulogo.png">
 	</div>

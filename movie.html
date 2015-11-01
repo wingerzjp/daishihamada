@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
@@ -13,6 +13,7 @@
 <script src="lib/slidebars.js"></script>
 <script src="lib/jquery.swipebox.min.js"></script>
 
+
 <link rel="shortcut icon" type="image/x-icon" href="./images/fav.png">
 <link rel="apple-touch-icon" href="./images/webclip.jpg">
 
@@ -25,6 +26,7 @@
   }) (jQuery);
 </script>
 
+<!-- サイドアコーディオンメニュー▼ -->
 <script>
     $(function(){
         $("#menu_sab dt").on("click", function() {
@@ -32,6 +34,8 @@
         });
     });
 </script>
+
+
 
 <script type="text/javascript">
 jQuery(function($) {
@@ -54,12 +58,14 @@ jQuery(function($) {
 </head>
 
 <body>
-<div id="sb-site">
+
 <div id="wrapper">
-<?php include("sp_nav.php"); ?>
+
+<?php include("sp_nav.php"); ?><!--スマホメニューヘッダー-->
 
 <?php include("side.php"); ?>
 
+<div id="sb-site">
 <!-- contens -->
 <div id="contens">
 
@@ -108,13 +114,9 @@ jQuery(function($) {
 	
 
 	<div class="movie_kanren">
-	<div class="movie_kanrentext">
 	<p>関連作品</p>
 	</div>
-	<div class="movie_kanrentext2">
-	<p></p>
-	</div>
-	</div>
+	
 
 	<div class="movie_table">
 	<div class="movie_img">
@@ -167,7 +169,7 @@ jQuery(function($) {
 </div><!--contens end-->
 </div><!--wapper end-->
 </div>
-<?php include("sp_menu.php"); ?>
+<?php include("sp_menu.php"); ?><!--サイドメニューの中身-->
 
 </body>
 </html>
