@@ -1,4 +1,4 @@
-<div class="sb-slidebar sb-left">
+<div data-role="panel" id="menu-left" data-display="push">
  	<ul class="sb-menu">
    		<li><a href="./info.html">info</a></li>
    		<hr>

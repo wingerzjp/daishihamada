@@ -130,9 +130,15 @@ a{
 	text-decoration: none;
 }
 
+#sb-site{
+	overflow: hidden;
+}
+
 #wrapper{
 	width: 100%;
 	display:table;
+	overflow: hidden;
+	background-color: #ffffff;/*メニューの残像消すために白バックにしている*/
 	
 }
 
@@ -150,6 +156,7 @@ a{
 	display: table-cell;
 	padding-top:100px;
 	margin: auto;
+	overflow: hidden;
 }
 
 /*nav設定*/
@@ -570,6 +577,7 @@ a{
      	height: 100%;
 		margin: auto;
 		text-align: center;
+		overflow: hidden;
 		
      }
      .works_table{
@@ -601,6 +609,34 @@ a{
 
 	}
 	
+	.movie_table{
+		width: 320px;
+		height: auto;
+		margin: auto;
+		display: block;
+	}
+	.movie_img {
+		width: 100%;
+		height: auto;
+		margin: auto;
+		padding-left: 0px;
+		display: block;
+	}
+	.movie_img img{
+		width: 100%;
+		height: auto;
+	}
+	
+	.movie_text{
+		width: 100%;
+		vertical-align: top;
+		text-align: center;
+		padding: 20px 2px;
+		margin-bottom: 50px;
+		font-size: 14px;
+		display: block;
+
+	}
 	
      #mobile {
         display: block;
